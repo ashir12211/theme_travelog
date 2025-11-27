@@ -5,7 +5,6 @@
     'author': 'XAPP',
     'summary': 'Manage travel packages for Travelog website',
     'depends': ['base', 'website'],
-   
 
     'data': [
         'security/ir.model.access.csv',
