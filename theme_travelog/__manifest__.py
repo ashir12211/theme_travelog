@@ -20,6 +20,9 @@
     'depends': [
         'website',
         'theme_default',
+        'crm',
+        'contacts',
+        'calendar',
         'travelog_packages',
 
     ],
