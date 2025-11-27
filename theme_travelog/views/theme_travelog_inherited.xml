@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_travelog_snippets" inherit_id="website.snippets">
+		<xpath expr="//t[@id='installed_snippets_hook']" position="after">
+			<t snippet-group="travelog" t-snippet="website.s_snippet_group" string="Travelog" t-thumbnail="/theme_travelog/static/src/img/banner/icon.png" />
+		</xpath>
+	</template>
+
+	<template id="theme_travelog_snippet_addition" inherit_id="website.snippets">
+		<snippets id="snippet_structure" string="Structure">
+			<t t-snippet="theme_travelog.s_travelog_navbar" group="travelog"/>
+			<t t-snippet="theme_travelog.s_book_now_banner" group="travelog"/>
+			<t t-snippet="theme_travelog.s_package_banner" group="travelog"/>
+			<t t-snippet="theme_travelog.s_travelog_hero" group="travelog"/>
+			<t t-snippet="theme_travelog.s_travelog_cards" group="travelog"/>
+			<t t-snippet="theme_travelog.marque_text" group="travelog"/>
+			<t t-snippet="theme_travelog.single_card" group="travelog"/>
+			<t t-snippet="theme_travelog.live_package_text" group="travelog"/>
+			<t t-snippet="theme_travelog.s_featured_destination" group="travelog"/>
+			<t t-snippet="theme_travelog.s_featured_destination_header" group="travelog"/>
+			<t t-snippet="theme_travelog.s_package_booking" group="travelog"/>
+			<t t-snippet="theme_travelog.s_insights_banner" group="travelog"/>
+			<t t-snippet="theme_travelog.s_modern_services" group="travelog"/>
+
+			<t t-snippet="theme_travelog.s_blog_hero_banner" group="travelog"/>
+			<t t-snippet="theme_travelog.s_blog_post_grid" group="travelog"/>
+
+			<t t-snippet="theme_travelog.s_travelog_about_hero" group="travelog"/>
+			<t t-snippet="theme_travelog.s_travelog_about_stats" group="travelog"/>
+			<t t-snippet="theme_travelog.s_travelog_about_team" group="travelog"/>
+			<t t-snippet="theme_travelog.s_travelog_about_story" group="travelog"/>
+
+			<t t-snippet="theme_travelog.s_contact_us" group="travelog"/>
+
+		</snippets>
+	</template>
+</odoo>

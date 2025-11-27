@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_package_booking" name="Package Booking Form">
+        <section class="s_package_booking pt64 pb64 bg-100" data-vcss="001" data-snippet="s_package_booking">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <h2 class="display-5 fw-bold mb-3">Book Your Dream <span class="text-primary">Getaway</span></h2>
+                        <p class="lead text-muted mb-4">
+                            Ready to explore? Get 50% Off On Your First Adventure Trip With Travelog. Get More Deal Offers Here.
+                        </p>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="fa fa-check text-success me-2"/> Instant Quote Generation</li>
+                            <li class="mb-2"><i class="fa fa-check text-success me-2"/> 24/7 Support Assigned</li>
+                            <li class="mb-2"><i class="fa fa-check text-success me-2"/> Best Price Guarantee</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-6 offset-lg-1">
+                        <form action="/website/package/submit" method="post" enctype="multipart/form-data" class="s_booking_form bg-white p-4 p-md-5 rounded-3 shadow-sm border">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label class="form-label fw-bold small text-uppercase text-muted">Destination / Package</label>
+                                    <select name="package_id" class="form-select form-select-lg bg-light border-0" required="required">
+                                        <option value="" selected="selected" disabled="disabled">Select a Package...</option>
+                                        <t t-foreach="request.env['travel.package'].sudo().search([('is_dropdown', '=', True)])" t-as="package">
+                                            <option t-att-value="'travel.package,%s' % package.id" t-esc="package.package_name or package.name"/>
+                                        </t>
+                                        <t t-foreach="request.env['featured.destination'].sudo().search([('is_dropdown', '=', True)])" t-as="dest">
+                                            <option t-att-value="'featured.destination,%s' % dest.id" t-esc="dest.fd_name"/>
+                                        </t>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" name="contact_name" id="floatingName" placeholder="John Doe" required="required"/>
+                                        <label for="floatingName">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control bg-light border-0" name="phone" id="floatingPhone" placeholder="+1 234..." required="required"/>
+                                        <label for="floatingPhone">Phone Number</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-light border-0" name="email_from" id="floatingEmail" placeholder="name@example.com" required="required"/>
+                                        <label for="floatingEmail">Email Address</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small text-uppercase text-muted">Travel Date</label>
+                                    <input type="date" class="form-control form-control-lg bg-light border-0" name="travel_date" required="required"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small text-uppercase text-muted">Guests</label>
+                                    <input type="number" class="form-control form-control-lg bg-light border-0" name="guest_count" min="1" value="2" required="required"/>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary w-100 btn-lg rounded-pill fw-bold shadow-sm transition-3d-hover">
+                                        Request Booking <i class="fa fa-paper-plane ms-2"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

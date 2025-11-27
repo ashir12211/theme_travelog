@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="live_package_text" name="Live Package Text">
+        <section class="travelog_packages_header">
+            <div class="container">
+                <div class="travelog_heading_wrapper">
+                    <div class="travelog_heading_badge">
+                        <span class="travelog_pulse_dot"></span>
+                        <span class="travelog_badge_text">LIVE NOW</span>
+                    </div>
+
+                    <h2 class="travelog_main_heading">
+                        <span class="travelog_gradient_text">Available</span>
+                        Travel Packages
+                    </h2>
+
+                    <p class="travelog_subheading">
+                        Discover extraordinary destinations and create unforgettable memories with our curated travel
+                        experiences
+                    </p>
+
+                    <div class="travelog_heading_decorator">
+                        <span class="travelog_decorator_line"></span>
+                        <i class="fa fa-plane travelog_decorator_icon"></i>
+                        <span class="travelog_decorator_line"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

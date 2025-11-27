@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="marque_text" name="Marque Text">
+<section class="travelog_marquee_section">
+    <div class="travelog_marquee">
+        <div class="travelog_marquee_content">
+            <span class="travelog_marquee_item">
+                <i class="fa fa-globe"/> Explore the World
+            </span>
+            <span class="travelog_marquee_item">
+                <i class="fa fa-heart"/> Create Memories
+            </span>
+            <span class="travelog_marquee_item">
+                <i class="fa fa-plane"/> Adventure Awaits
+            </span>
+            <span class="travelog_marquee_item">
+                <i class="fa fa-compass"/> Discover New Places
+            </span>
+            <span class="travelog_marquee_item">
+                <i class="fa fa-camera"/> Capture Moments
+            </span>
+            <span class="travelog_marquee_item">
+                <i class="fa fa-map-marker"/> Journey Beyond
+            </span>
+        </div>
+
+        <!-- Duplicate for seamless loop -->
+        <div class="travelog_marquee_content" aria-hidden="true">
+            <span class="travelog_marquee_item">
+                <i class="fa fa-globe"/> Explore the World
+            </span>
+            <span class="travelog_marquee_item">
+                <i class="fa fa-heart"/> Create Memories
+            </span>
+            <span class="travelog_marquee_item">
+                <i class="fa fa-plane"/> Adventure Awaits
+            </span>
+            <span class="travelog_marquee_item">
+                <i class="fa fa-compass"/> Discover New Places
+            </span>
+            <span class="travelog_marquee_item">
+                <i class="fa fa-camera"/> Capture Moments
+            </span>
+            <span class="travelog_marquee_item">
+                <i class="fa fa-map-marker"/> Journey Beyond
+            </span>
+        </div>
+    </div>
+</section>
+    </template>
+</odoo>

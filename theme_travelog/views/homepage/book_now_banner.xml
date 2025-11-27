@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="s_book_now_banner" name="Book Now Banner">
+        <section class="s_book_now_banner o_cc o_cc1 pt64 pb64" data-snippet="s_book_now_banner" data-name="Book Now Banner">
+            <!-- Background Image -->
+            <div class="s_book_now_banner_bg position-absolute w-100 h-100 top-0 start-0">
+                <img src="/theme_travelog/static/src/img/banner/hero_bg-2.jpg" alt="Travel Destination" class="w-100 h-100 object-fit-cover"/>
+                <div class="s_book_now_banner_overlay position-absolute w-100 h-100 top-0 start-0"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="container position-relative h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-7">
+                        <!-- Main Title -->
+                        <h1 class="s_book_now_banner_title display-3 fw-bold text-white mb-4">
+                            Plan Tours<br/>
+                            To Dream Locations<br/>
+                            In Just A Click!
+                        </h1>
+
+                        <!-- Customer Reviews -->
+                        <div class="s_book_now_banner_reviews d-flex align-items-center gap-3">
+                            <div class="s_book_now_banner_avatars d-flex">
+                                <div class="avatar avatar-1">
+                                    <img src="/theme_travelog/static/src/img/banner/Avatar1.jpeg" alt="Customer" class="rounded-circle"/>
+                                </div>
+                                <div class="avatar avatar-2">
+                                    <img src="/theme_travelog/static/src/img/banner/Avatar2.jpeg" alt="Customer" class="rounded-circle"/>
+                                </div>
+                                <div class="avatar avatar-3">
+                                    <img src="/theme_travelog/static/src/img/banner/Avatar3.jpeg" alt="Customer" class="rounded-circle"/>
+                                </div>
+                                <div class="avatar avatar-4">
+                                    <img src="/theme_travelog/static/src/img/banner/Avatar4.jpeg" alt="Customer" class="rounded-circle"/>
+                                </div>
+                                <div class="avatar avatar-count rounded-circle d-flex align-items-center justify-content-center">
+                                    <span class="small fw-bold">8k+</span>
+                                </div>
+                            </div>
+                            <div class="s_book_now_banner_review_text">
+                                <p class="text-white mb-0 fw-semibold">Happy Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

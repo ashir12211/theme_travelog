@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_featured_destination" name="Featured Destinations">
+  <section class="s_featured_destinations o_cc o_cc1 pt96 pb96" data-snippet="s_featured_destinations" data-name="Featured Destinations">
+            <t t-set="packages" t-value="request.env['featured.destination'].sudo().search([('fd_is_featured', '=', True)])"/>
+
+            <div class="container">
+
+                <!-- Destinations Grid -->
+                <div class="s_featured_destinations_grid row g-4">
+                    <t t-foreach="packages" t-as="pkg">
+                        <div class="col-lg-4 col-md-6 s_featured_destination_wrapper js_featured_card"
+                             t-att-data-index="pkg_index">
+                            <div class="s_featured_destination_card h-100 position-relative">
+
+                                <!-- Image Container -->
+                                <div class="s_featured_destination_image position-relative overflow-hidden">
+                                    <img t-if="pkg.fd_image"
+                                         t-att-src="'data:image/png;base64,%s' % pkg.fd_image.decode()"
+                                         t-att-alt="pkg.fd_name"
+                                         class="w-100 h-100"/>
+                                    <img t-else=""
+                                         src="/web/static/src/img/placeholder.png"
+                                         t-att-alt="pkg.fd_name"
+                                         class="w-100 h-100"/>
+
+                                    <!-- Gradient Overlay -->
+                                    <div class="s_featured_destination_overlay position-absolute w-100 h-100 top-0 start-0"></div>
+
+                                    <!-- Price Badge -->
+                                    <div class="s_featured_destination_price_badge position-absolute top-0 end-0 m-3">
+                                        <div class="badge-content px-3 py-2 rounded-pill bg-white shadow-lg">
+                                            <span class="badge-from d-block text-muted small mb-0">FROM</span>
+                                           <span class="badge-price d-block fw-bold text-dark" style="font-size: 12px;">
+                                                $<t t-esc="'%.0f' % pkg.fd_price"/>/night
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Floating Particles -->
+                                    <div class="s_featured_destination_particles">
+                                        <span class="particle particle-1"></span>
+                                        <span class="particle particle-2"></span>
+                                        <span class="particle particle-3"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Content Container -->
+                                <div class="s_featured_destination_content position-absolute bottom-0 start-0 w-100 p-4">
+                                    <!-- Location Name -->
+                                    <div class="s_featured_destination_location mb-3">
+                                        <h3 class="destination-name fw-bold text-white mb-2">
+                                            <t t-esc="pkg.fd_name"/>
+                                        </h3>
+                                        <p class="destination-place text-white-50 mb-0">
+                                            <i class="fa fa-map-marker-alt me-2"></i>
+                                            <t t-esc="pkg.fd_location"/>
+                                        </p>
+                                    </div>
+
+                                    <!-- Description -->
+                                    <p class="s_featured_destination_description text-white mb-3">
+                                        <t t-esc="pkg.fd_description[:120] + '...' if len(pkg.fd_description) > 120 else pkg.fd_description"/>
+                                    </p>
+
+                                    <!-- CTA Button -->
+                                    <a t-attf-href="/book-now"
+                                       class="s_featured_destination_btn btn btn-light rounded-pill px-4 w-100">
+                                        <span class="btn-text">Explore Now</span>
+                                        <i class="fa fa-arrow-right ms-2 btn-icon"></i>
+                                    </a>
+                                </div>
+
+                                <!-- Decorative Corner -->
+                                <div class="s_featured_destination_corner position-absolute">
+                                    <svg width="100" height="100" viewBox="0 0 100 100">
+                                        <path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+
+                <!-- View All Button -->
+<!--                <div class="row mt-5">-->
+<!--                    <div class="col-12 text-center">-->
+<!--                        <a href="/shop" class="btn btn-outline-primary btn-lg rounded-pill px-5 py-3">-->
+<!--                            <span>View All Destinations</span>-->
+<!--                            <i class="fa fa-compass ms-2"></i>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+
+            <!-- Background Decoration -->
+            <div class="s_featured_destinations_bg_shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </section>
+    </template>
+</odoo>

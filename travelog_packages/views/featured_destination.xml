@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Action -->
+    <record id="featured_destination_action" model="ir.actions.act_window">
+        <field name="name">Featured Destination</field>
+        <field name="res_model">featured.destination</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Tree/List View -->
+    <record id="view_featured_destination_list" model="ir.ui.view">
+        <field name="name">featured.destination.list</field>
+        <field name="model">featured.destination</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="fd_name"/>
+                <field name="fd_location"/>
+                <field name="fd_price"/>
+                <field name="fd_is_featured"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_featured_destination_form" model="ir.ui.view">
+        <field name="name">featured_destination_form</field>
+        <field name="model">featured.destination</field>
+        <field name="arch" type="xml">
+            <form string="Featured Destination">
+                <sheet>
+                    <widget name="web_ribbon" title="Active" bg_color="bg-warning" invisible="not fd_is_featured"/>
+
+                    <div class="oe_title">
+                        <label for="fd_name" string="Destination Name"/>
+                        <h1>
+                            <field name="fd_name" placeholder="e.g. Seeb Resort, Sorat Villa"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="fd_location" placeholder="e.g. Europe"/>
+                            <field name="fd_price"/>
+                             <field name="is_dropdown"/>
+                            <field name="fd_is_featured"/>
+                        </group>
+                        <group>
+                            <field name="fd_image" widget="image" class="my_large_image"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Description">
+                            <field name="fd_description" placeholder="Write detailed destination description here..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Replace Default Odoo Footer -->
+    <template id="footer_custom" inherit_id="website.layout" name="Custom Footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="s_travelog_footer o_footer o_colored_level o_cc">
+                <div class="container">
+                    <!-- Main Footer Content -->
+                    <div class="row py-5">
+                        <!-- About Column -->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                            <h3 class="s_footer_brand mb-4">
+                                <i class="fa fa-plane me-2"></i>
+                                Travelog
+                            </h3>
+                            <p class="s_footer_description text-muted mb-4">
+                                Your trusted travel partner for unforgettable journeys around the world. We create experiences, not just trips.
+                            </p>
+                            <div class="s_footer_social">
+                                <a href="#" class="s_footer_social_link"><i class="fa fa-facebook-f"></i></a>
+                                <a href="#" class="s_footer_social_link"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="s_footer_social_link"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="s_footer_social_link"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                            <h5 class="s_footer_title mb-4">Quick Links</h5>
+                            <ul class="s_footer_links list-unstyled">
+                                <li><a href="/page/homepage">Home</a></li>
+                                <li><a href="/page/about">About Us</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/contactus">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Destinations -->
+                        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                            <h5 class="s_footer_title mb-4">Destinations</h5>
+                            <ul class="s_footer_links list-unstyled">
+                                <li><a href="#">Europe</a></li>
+                                <li><a href="#">Asia</a></li>
+                                <li><a href="#">Americas</a></li>
+                                <li><a href="#">Africa</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="col-lg-4 col-md-6">
+                            <h5 class="s_footer_title mb-4">Contact Us</h5>
+                            <ul class="s_footer_contact list-unstyled">
+                                <li class="mb-3">
+                                    <i class="fa fa-map-marker me-3"></i>
+                                    <span>123 Travel Street, City, Country</span>
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fa fa-phone me-3"></i>
+                                    <span>+1 234 567 8900</span>
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fa fa-envelope me-3"></i>
+                                    <span>info@travelog.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer Bottom -->
+                    <div class="s_footer_bottom py-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                <p class="s_footer_copyright mb-0 text-muted">
+                                    © <span t-esc="datetime.datetime.now().year"/> Travelog. All rights reserved.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center text-md-end">
+                                <ul class="s_footer_legal list-inline mb-0">
+                                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                                    <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                                    <li class="list-inline-item"><a href="#">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

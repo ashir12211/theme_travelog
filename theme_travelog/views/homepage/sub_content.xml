@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_travelog_cards" name="Sub Content">
+
+        <section class="s_travelog_cards pt-5 pb-5">
+            <t t-set="packages" t-value="request.env['travel.package'].sudo().search([('is_featured', '=', True)])"/>
+
+            <div class="container">
+                <div class="row g-3 travelog_cards_container">
+
+                    <!-- Dynamic Loop -->
+                    <t t-foreach="packages" t-as="pkg">
+                        <div class="col-lg-4 col-md-6 travelog_card_wrapper" data-animation-delay="0">
+                            <div class="travelog_card">
+
+                                <!-- Image -->
+                                <div class="travelog_card_image">
+                                    <img t-if="pkg.image"
+                                         t-att-src="'data:image/png;base64,%s' % pkg.image.decode()"
+                                         class="img-fluid"/>
+
+
+                                    <div class="travelog_card_overlay">
+                                        <span class="travelog_card_category">
+                                            <t t-esc="pkg.location"/>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="travelog_card_content">
+                                    <h3 class="travelog_card_title">
+                                        <t t-esc="pkg.name"/>
+                                    </h3>
+
+                                    <p class="travelog_card_description">
+                                        <t t-esc="pkg.description or 'No description available.'"/>
+                                    </p>
+
+                                    <!-- Dates + Price -->
+                                    <!-- Dates + Price -->
+                                    <p class="travelog_card_description">
+                                        <strong>Start:</strong>
+                                        <t t-esc="pkg.start_date.strftime('%b %d')" t-if="pkg.start_date"/>
+                                        <br/>
+                                        <strong>End:</strong>
+                                        <t t-esc="pkg.end_date.strftime('%b %d')" t-if="pkg.end_date"/>
+                                        <br/>
+                                        <strong>Price:</strong>
+                                        $
+                                        <t t-esc="pkg.price"/>
+                                    </p>
+
+                                    <div class="travelog_card_footer">
+                                        <span class="travelog_card_rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+
+                                        <a href="/book-now" class="travelog_card_link">
+                                            Book Now
+                                            <i class="fa fa-arrow-right ms-2"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

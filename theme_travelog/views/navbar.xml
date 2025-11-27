@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Replace Default Odoo Header with Custom Navbar -->
+    <template id="custom_header_replace" inherit_id="website.layout" name="Custom Travelog Header">
+        <xpath expr="//header" position="replace">
+            <nav class="s_travelog_navbar navbar navbar-expand-lg fixed-top" data-name="Travelog Navbar">
+                <div class="container-fluid px-4">
+                    <!-- Logo -->
+                    <a class="navbar-brand d-flex align-items-center" href="/">
+                        <i class="fa fa-plane me-2 fs-4"></i>
+                        <span class="fw-bold fs-4">Travelog</span>
+                    </a>
+
+                    <!-- Mobile Toggle Button -->
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#travelogNavbar" aria-controls="travelogNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navigation Menu -->
+                    <div class="collapse navbar-collapse" id="travelogNavbar">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link px-3" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" href="/packages">Packages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" href="/blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" href="/aboutus">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" href="/contactus">Contact</a>
+                            </li>
+                        </ul>
+
+                        <!-- CTA Button -->
+                        <div class="d-flex">
+                            <a href="/book-now" class="btn btn-primary rounded-pill px-4 py-2 fw-semibold">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </xpath>
+    </template>
+
+    <!-- Standalone Snippet Template (for manual placement) -->
+    <template id="s_travelog_navbar" name="Travelog Navbar">
+        <nav class="s_travelog_navbar navbar navbar-expand-lg fixed-top" data-snippet="s_travelog_navbar" data-name="Travelog Navbar">
+            <div class="container-fluid px-4">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <i class="fa fa-plane me-2 fs-4"></i>
+                    <span class="fw-bold fs-4">Travelog</span>
+                </a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#travelogNavbar" aria-controls="travelogNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="travelogNavbar">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="/shop">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="/blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="/aboutus">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="/contactus">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- CTA Button -->
+                    <div class="d-flex">
+                        <a href="/book-now" class="btn btn-primary rounded-pill px-4 py-2 fw-semibold">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </template>
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_featured_destination_header" name="Featured Destinations Header">
+<section>
+<!-- Section Header -->
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <span class="s_featured_destinations_badge d-inline-block mb-3 px-4 py-2 rounded-pill bg-gradient-primary text-white small fw-bold">
+                            <i class="fa fa-gem me-2"></i>DISCOVER PARADISE
+                        </span>
+                        <h2 class="s_featured_destinations_title display-3 fw-bold mb-4" data-name="Title">
+                            Featured Destinations
+                        </h2>
+                        <p class="s_featured_destinations_subtitle text-muted lead mx-auto" style="max-width: 700px;" data-name="Subtitle">
+                            Handpicked destinations that offer extraordinary experiences and unforgettable memories
+                        </p>
+                    </div>
+                </div>
+     <!-- Background Decoration -->
+            <div class="s_featured_destinations_bg_shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+    </section>
+    </template>
+</odoo>

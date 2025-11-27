@@ -1,0 +1,166 @@
+<odoo>
+    <data>
+        <!-- Modern Services Section Snippet -->
+        <template id="s_modern_services" name="Modern Services">
+            <section class="s_modern_services py-5" data-name="Modern Services">
+                <div class="container">
+                    <!-- Section Header -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h2 class="services-main-title" data-aos="fade-down">
+                                Our Services
+                                <span class="title-badge">(Unique Items Only)</span>
+                            </h2>
+                        </div>
+                    </div>
+                    
+                    <!-- Services List -->
+                    <div class="services-list">
+                        <!-- Service 1 -->
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="row align-items-start">
+                                <div class="col-lg-1 col-md-2 col-3">
+                                    <div class="service-number">1.</div>
+                                </div>
+                                <div class="col-lg-11 col-md-10 col-9">
+                                    <div class="service-content">
+                                        <h3 class="service-title">Worldwide Tours</h3>
+                                        <div class="service-icon">
+                                            <i class="fa fa-globe"></i>
+                                        </div>
+                                        <p class="service-label">Description:</p>
+                                        <p class="service-description">
+                                            Explore breathtaking destinations across the globe with our expertly curated tour packages. 
+                                            From ancient wonders to modern marvels, we bring the world to your doorstep with seamless 
+                                            planning and unforgettable experiences.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 2 -->
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="row align-items-start">
+                                <div class="col-lg-1 col-md-2 col-3">
+                                    <div class="service-number">2.</div>
+                                </div>
+                                <div class="col-lg-11 col-md-10 col-9">
+                                    <div class="service-content">
+                                        <h3 class="service-title">Hotel Reservation</h3>
+                                        <div class="service-icon">
+                                            <i class="fa fa-hotel"></i>
+                                        </div>
+                                        <p class="service-label">Description:</p>
+                                        <p class="service-description">
+                                            Book premium accommodations at the best rates worldwide. We partner with top hotels 
+                                            and resorts to ensure your stay is comfortable, luxurious, and perfectly suited to 
+                                            your travel needs and preferences.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 3 -->
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="row align-items-start">
+                                <div class="col-lg-1 col-md-2 col-3">
+                                    <div class="service-number">3.</div>
+                                </div>
+                                <div class="col-lg-11 col-md-10 col-9">
+                                    <div class="service-content">
+                                        <h3 class="service-title">Travel Guides</h3>
+                                        <div class="service-icon">
+                                            <i class="fa fa-map-marked-alt"></i>
+                                        </div>
+                                        <p class="service-label">Description:</p>
+                                        <p class="service-description">
+                                            Navigate your journey with confidence using our expert local guides. Our knowledgeable 
+                                            professionals provide insider tips, cultural insights, and personalized attention to 
+                                            make every moment of your trip meaningful.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 4 -->
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="row align-items-start">
+                                <div class="col-lg-1 col-md-2 col-3">
+                                    <div class="service-number">4.</div>
+                                </div>
+                                <div class="col-lg-11 col-md-10 col-9">
+                                    <div class="service-content">
+                                        <h3 class="service-title">Event Management</h3>
+                                        <div class="service-icon">
+                                            <i class="fa fa-calendar-check"></i>
+                                        </div>
+                                        <p class="service-label">Description:</p>
+                                        <p class="service-description">
+                                            From corporate retreats to destination weddings, we handle every detail of your special 
+                                            events. Our dedicated team ensures flawless execution, creative solutions, and memorable 
+                                            experiences for you and your guests.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 5 -->
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="500">
+                            <div class="row align-items-start">
+                                <div class="col-lg-1 col-md-2 col-3">
+                                    <div class="service-number">5.</div>
+                                </div>
+                                <div class="col-lg-11 col-md-10 col-9">
+                                    <div class="service-content">
+                                        <h3 class="service-title">Travel Insurance</h3>
+                                        <div class="service-icon">
+                                            <i class="fa fa-shield-alt"></i>
+                                        </div>
+                                        <p class="service-label">Description:</p>
+                                        <p class="service-description">
+                                            Travel with peace of mind knowing you're protected. Our comprehensive insurance plans 
+                                            cover medical emergencies, trip cancellations, lost luggage, and more, ensuring you're 
+                                            safeguarded throughout your journey.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 6 -->
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="600">
+                            <div class="row align-items-start">
+                                <div class="col-lg-1 col-md-2 col-3">
+                                    <div class="service-number">6.</div>
+                                </div>
+                                <div class="col-lg-11 col-md-10 col-9">
+                                    <div class="service-content">
+                                        <h3 class="service-title">Custom Itineraries</h3>
+                                        <div class="service-icon">
+                                            <i class="fa fa-route"></i>
+                                        </div>
+                                        <p class="service-label">Description:</p>
+                                        <p class="service-description">
+                                            Your journey, your way. We create personalized travel itineraries tailored to your 
+                                            interests, budget, and schedule. Every detail is crafted to match your unique travel 
+                                            style and create unforgettable memories.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Scroll Indicator -->
+                    <div class="scroll-more-indicator" data-aos="fade" data-aos-delay="700">
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </data>
+</odoo>

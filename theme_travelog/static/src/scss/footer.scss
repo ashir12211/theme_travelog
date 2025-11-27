@@ -1,0 +1,193 @@
+// Travelog Modern Footer Styles
+
+.s_travelog_footer {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #94a3b8;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    // Brand Section
+    .s_footer_brand {
+        color: #ffffff;
+        font-size: 1.75rem;
+        font-weight: 700;
+
+        i {
+            color: #667eea;
+        }
+    }
+
+    .s_footer_description {
+        color: #cbd5e1;
+        line-height: 1.8;
+        font-size: 0.95rem;
+    }
+
+    // Social Media Links
+    .s_footer_social {
+        display: flex;
+        gap: 0.75rem;
+    }
+
+    .s_footer_social_link {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #cbd5e1;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        &:hover {
+            background: #667eea;
+            color: #ffffff;
+            border-color: #667eea;
+            transform: translateY(-5px);
+        }
+    }
+
+    // Footer Titles
+    .s_footer_title {
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 0.5rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: #667eea;
+        }
+    }
+
+    // Footer Links
+    .s_footer_links {
+        li {
+            margin-bottom: 0.75rem;
+
+            a {
+                color: #cbd5e1;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                display: inline-block;
+
+                &:hover {
+                    color: #ffffff;
+                    transform: translateX(5px);
+                }
+            }
+        }
+    }
+
+    // Contact Info
+    .s_footer_contact {
+        li {
+            display: flex;
+            align-items: flex-start;
+            color: #cbd5e1;
+
+            i {
+                color: #667eea;
+                margin-top: 2px;
+                width: 20px;
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    // Footer Bottom
+    .s_footer_bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+        .s_footer_copyright {
+            font-size: 0.9rem;
+        }
+
+        .s_footer_legal {
+            li {
+                margin-left: 1.5rem;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                a {
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    // Responsive Design
+    @media (max-width: 767px) {
+        .s_footer_brand {
+            font-size: 1.5rem;
+        }
+
+        .s_footer_title {
+            font-size: 1rem;
+            margin-top: 2rem;
+
+            &::after {
+                width: 30px;
+            }
+        }
+
+        .s_footer_social {
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .s_footer_legal {
+            text-align: center !important;
+
+            li {
+                margin: 0 0.5rem !important;
+                display: inline-block;
+            }
+        }
+
+        .s_footer_copyright {
+            text-align: center !important;
+        }
+
+        .s_footer_contact {
+            li {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
+}
+
+// Animation for footer on scroll
+.s_travelog_footer {
+    animation: fadeInFooter 1s ease-out;
+}
+
+@keyframes fadeInFooter {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

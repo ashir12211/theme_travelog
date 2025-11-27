@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- About Us Hero Section -->
+    <template id="s_travelog_about_hero" name="Travelog About Hero">
+        <section class="s_travelog_about_hero o_cc o_cc1 pt96 pb96" data-snippet="s_travelog_about_hero" data-name="About Hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <span class="s_about_badge d-inline-block mb-3 px-4 py-2 rounded-pill text-white small fw-bold"
+      style="background-color: #0d6efd;">
+                            ABOUT US
+                        </span>
+                       <h1 class="s_about_title display-3 fw-bold mb-4 text-white">
+    Your Journey Begins With Us
+</h1>
+
+                       <p class="s_about_description lead mb-4 text-white">
+    We are passionate travel experts dedicated to creating unforgettable experiences around the world. With over a decade of expertise, we transform your travel dreams into reality.
+</p>
+
+                        <div class="s_about_features">
+                            <div class="s_about_feature_item d-flex align-items-start mb-3">
+                               <div class="s_about_feature_icon me-3" style="background-color: #0d6efd; border-radius: 8px; padding: 8px;">
+    <i class="fa fa-check-circle text-white fa-2x"></i>
+</div>
+
+                                <div>
+                                    <h5 class="fw-bold mb-1"  style="color: #ffffff;">Expertly Curated</h5>
+                                    <p class="mb-0"  style="color: #ffffff;">Every destination handpicked by travel experts</p>
+                                </div>
+                            </div>
+                          <div class="s_about_feature_item d-flex align-items-start mb-3">
+    <div class="s_about_feature_icon me-3"
+         style="background-color: #0d6efd; padding: 10px; border-radius: 50%; width: 48px; height: 48px; display:flex; justify-content:center; align-items:center;">
+        <i class="fa fa-shield text-white fa-lg"></i>
+    </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1"  style="color: #ffffff;">Safe &amp; Secure</h5>
+                                    <p class="mb-0"  style="color: #ffffff;">Your safety is our top priority</p>
+                                </div>
+                            </div>
+                            <div class="s_about_feature_item d-flex align-items-start">
+                              <div class="s_about_feature_icon me-3"
+     style="background-color: #0d6efd; padding: 10px; border-radius: 50%; width: 48px; height: 48px; display:flex; justify-content:center; align-items:center;">
+    <i class="fa fa-heart text-white fa-lg"></i>
+</div>
+
+                                <div>
+                                    <h5 class="fw-bold mb-1"  style="color: #ffffff;">Personalized Service</h5>
+                                    <p class="mb-0"  style="color: #ffffff;">Tailored experiences just for you</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="s_about_hero_image">
+                            <img src="/theme_travelog/static/src/img/banner/logo.png" alt="About Us" class="img-fluid rounded-4 shadow-lg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Stats Section -->
+    <template id="s_travelog_about_stats" name="Travelog About Stats">
+        <section class="s_travelog_about_stats o_cc o_cc2 pt96 pb96" data-snippet="s_travelog_about_stats" data-name="About Stats">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 col-6 mb-4 mb-md-0">
+                        <div class="s_stat_card">
+                            <div class="s_stat_icon mb-3">
+                                <i class="fa fa-globe fa-3x " style="color: #0056b3;"></i>
+                            </div>
+                            <h2 class="s_stat_number display-4 fw-bold mb-2" data-counter="250">0</h2>
+                            <p class="s_stat_label text-muted mb-0">Destinations</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4 mb-md-0">
+                        <div class="s_stat_card">
+                            <div class="s_stat_icon mb-3">
+                                <i class="fa fa-users fa-3x " style="color: #0056b3;"></i>
+                            </div>
+                            <h2 class="s_stat_number display-4 fw-bold mb-2" data-counter="10000">0</h2>
+                            <p class="s_stat_label text-muted mb-0">Happy Travelers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="s_stat_card">
+                            <div class="s_stat_icon mb-3">
+                                <i class="fa fa-trophy fa-3x " style="color: #0056b3;"></i>
+                            </div>
+                            <h2 class="s_stat_number display-4 fw-bold mb-2" data-counter="50">0</h2>
+                            <p class="s_stat_label text-muted mb-0">Awards Won</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="s_stat_card">
+                            <div class="s_stat_icon mb-3">
+                                <i class="fa fa-star fa-3x " style="color: #0056b3;"></i>
+                            </div>
+                            <h2 class="s_stat_number display-4 fw-bold mb-2"><span data-counter="15">0</span>+</h2>
+                            <p class="s_stat_label text-muted mb-0">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Team Section -->
+    <template id="s_travelog_about_team" name="Travelog Team">
+        <section class="s_travelog_about_team o_cc o_cc1 pt96 pb96" data-snippet="s_travelog_about_team" data-name="Team">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                      <span class="s_team_badge d-inline-block mb-3 px-4 py-2 rounded-pill text-white small fw-bold"
+      style="background-color: #0d6efd;">
+    OUR TEAM
+</span>
+
+                        <h2 class="s_team_title display-4 fw-bold mb-3">
+                            Meet Our Travel Experts
+                        </h2>
+                        <p class="s_team_subtitle lead text-muted">
+                            Passionate professionals dedicated to making your travel dreams come true
+                        </p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <!-- Team Member 1 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="s_team_card">
+                            <div class="s_team_image">
+                                <img src="/theme_travelog/static/src/img/banner/guide-1.jpg" alt="Team Member" class="img-fluid"/>
+                                <div class="s_team_social">
+                                    <a href="#" class="s_social_link"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#" class="s_social_link"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="s_social_link"><i class="fa fa-facebook"></i></a>
+                                </div>
+                            </div>
+                            <div class="s_team_info">
+                                <h5 class="s_team_name fw-bold mb-1">Sarah Johnson</h5>
+                                <p class="s_team_role mb-2" style="color: #0d6efd;">CEO &amp; Founder</p>
+
+                                <p class="s_team_bio small text-muted">Passionate about creating unforgettable travel experiences</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="s_team_card">
+                            <div class="s_team_image">
+                                <img src="/theme_travelog/static/src/img/banner/guide-2.jpg" alt="Team Member" class="img-fluid"/>
+                                <div class="s_team_social">
+                                    <a href="#" class="s_social_link"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#" class="s_social_link"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="s_social_link"><i class="fa fa-facebook"></i></a>
+                                </div>
+                            </div>
+                            <div class="s_team_info">
+                                <h5 class="s_team_name fw-bold mb-1">Michael Chen</h5>
+                                <p class="s_team_role mb-2" style="color: #0d6efd;">Travel Director</p>
+                                <p class="s_team_bio small text-muted">Expert in Asian destinations and cultural experiences</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="s_team_card">
+                            <div class="s_team_image">
+                                <img src="/theme_travelog/static/src/img/banner/guide-3.jpg" alt="Team Member" class="img-fluid"/>
+                                <div class="s_team_social">
+                                    <a href="#" class="s_social_link"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#" class="s_social_link"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="s_social_link"><i class="fa fa-facebook"></i></a>
+                                </div>
+                            </div>
+                            <div class="s_team_info">
+                                <h5 class="s_team_name fw-bold mb-1">Emma Rodriguez</h5>
+                                <p class="s_team_role mb-2" style="color: #0d6efd;">Operations Manager</p>
+                                <p class="s_team_bio small text-muted">Ensuring seamless travel experiences worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="s_team_card">
+                            <div class="s_team_image">
+                                <img src="/theme_travelog/static/src/img/banner/guide-4.jpg" alt="Team Member" class="img-fluid"/>
+                                <div class="s_team_social">
+                                    <a href="#" class="s_social_link"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#" class="s_social_link"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="s_social_link"><i class="fa fa-facebook"></i></a>
+                                </div>
+                            </div>
+                            <div class="s_team_info">
+                                <h5 class="s_team_name fw-bold mb-1">David Thompson</h5>
+                                <p class="s_team_role mb-2 " style="color: #0d6efd;">Customer Relations</p>
+                                <p class="s_team_bio small text-muted">Dedicated to exceptional customer satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Our Story Section -->
+    <template id="s_travelog_about_story" name="Travelog Our Story">
+        <section class="s_travelog_about_story o_cc o_cc2 pt96 pb96" data-snippet="s_travelog_about_story" data-name="Our Story">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="s_story_images">
+                            <div class="s_story_image_main">
+                                <img src="/theme_travelog/static/src/img/banner/logo.png" alt="Our Story" class="img-fluid rounded-4 shadow-lg"/>
+                            </div>
+                            <div class="s_story_image_badge">
+                                <div class="s_story_badge_content">
+                                    <h3 class="display-5 fw-bold text-white mb-0">15+</h3>
+                                    <p class="text-white mb-0">Years of Excellence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <span class="s_story_badge d-inline-block mb-3 px-4 py-2 rounded-pill text-white small fw-bold"
+      style="background-color: #0d6efd;">
+    OUR STORY
+</span>
+
+                        <h2 class="s_story_title display-4 fw-bold mb-4">
+                            Crafting Memorable Journeys Since 2009
+                        </h2>
+                        <p class="s_story_text text-muted mb-4">
+                            What started as a small travel agency with a big dream has grown into a trusted name in the travel industry. Our journey began with a simple belief: every traveler deserves an extraordinary experience.
+                        </p>
+                        <p class="s_story_text text-muted mb-4">
+                            Over the years, we've helped thousands of travelers discover the world, from hidden gems to iconic destinations. Our commitment to excellence and personalized service has earned us the trust and loyalty of our clients.
+                        </p>
+                        <div class="s_story_values">
+                            <div class="s_story_value_item d-flex align-items-center mb-3">
+                                <i class="fa fa-check-circle me-3 fa-lg" style="color: #0056b3;"></i>
+                                <span class="fw-semibold">Personalized Travel Experiences</span>
+                            </div>
+                            <div class="s_story_value_item d-flex align-items-center mb-3">
+                                <i class="fa fa-check-circle me-3 fa-lg" style="color: #0056b3;"></i>
+                                <span class="fw-semibold">24/7 Customer Support</span>
+                            </div>
+                            <div class="s_story_value_item d-flex align-items-center">
+                                <i class="fa fa-check-circle me-3 fa-lg" style="color: #0056b3;"></i>
+                                <span class="fw-semibold">Best Price Guarantee</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

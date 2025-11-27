@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Main Menu -->
+    <menuitem id="travelog_menu" name="Travelog" sequence="10"/>
+
+    <!-- Packages Submenu -->
+    <menuitem id="travelog_package_menu"
+              name="Packages"
+              parent="travelog_menu"
+              action="travel_package_action"
+              sequence="20"/>
+
+    <!-- Featured Destination Submenu -->
+    <menuitem id="travelog_featured_menu"
+              name="Featured Destination"
+              parent="travelog_menu"
+              action="featured_destination_action"
+              sequence="30"/>
+
+</odoo>
