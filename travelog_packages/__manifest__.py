@@ -15,6 +15,13 @@
         'views/menu.xml',
     ],
 
+    'images': [
+
+        'static/description/travelog_cover.png',
+        'static/description/travelog_screenshot.png',
+
+    ],
+
     'installable': True,
     'application': False,
     'sequence': 1,
