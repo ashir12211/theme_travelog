@@ -5,6 +5,8 @@
     'author': 'XAPP',
     'summary': 'Manage travel packages for Travelog website',
     'depends': ['base', 'website'],
+    'price': 109.00,
+    'currency': 'USD',
 
     'data': [
         'security/ir.model.access.csv',
